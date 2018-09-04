@@ -1,0 +1,304 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    transition: 0.4s;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: medium-content-sans-serif-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+}
+
+.content {
+    min-height: 100%;
+    position: relative;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+.content2 {
+    position: fixed;
+}
+
+.contentMenu {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #333145 0%, #b8333ef7 100%);
+    transition: 0.4s;
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+}
+
+.nut {
+    color: white;
+    float: right;
+    padding: 20px;
+}
+
+.contentMenu i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.contentMenu ul {
+    display: block;
+    padding: 0;
+    list-style: none;
+    opacity: 0.9;
+    transition: 0.4s;
+    margin: 40px;
+}
+
+.contentMenu ul li {
+    color: #dfe5eb;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.contentMenu ul li i {
+    padding-right: 10px;
+}
+
+.contentMenu ul li:hover {
+    color: #59e9df;
+}
+
+.contentMenu ul .sep {
+    margin-top: 7px;
+    padding-top: 14px;
+    border-top: 1px solid #6b7b8d;
+}
+
+.menutrai {
+    transform: translateX(-100%);
+    background: linear-gradient(to bottom, #333145 0%, #b8333ef7 100%);
+}
+
+.Menu {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-size: 100% auto;
+}
+/*iconMenu*/
+
+
+.header_mobile {
+    width: 100%;
+    height: 100px;
+    background: #282828;
+    transition: 0.3s;
+    display: none;
+}
+
+.menu1 {
+    width: 15%;
+    height: 80px;
+    float: right;
+}
+
+.menu1 i {
+    font-size: 30px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+/*Social Facebook google*/
+
+
+/*end Social facebook google*/
+
+.burger {
+    display: inline-block;
+    border: 0;
+    background: none;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    border-bottom: 4px solid currentColor;
+    width: 28px;
+    transition: border-bottom 1s ease-in-out;
+    -webkit-transition: border-bottom 1s ease-in-out;
+}
+
+.burger:before {
+    content: "";
+    display: block;
+    border-bottom: 4px solid currentColor;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger:after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid currentColor;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger-check {
+    display: none;
+}
+
+.burger-check:checked~.burger {
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 0.8s ease-in-out;
+    -webkit-transition: border-bottom 0.8s ease-in-out;
+    color: white
+}
+
+.burger-check:checked~.burger:before {
+    transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    color: white
+}
+
+.burger-check:checked~.burger:after {
+    transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    color: white;
+}
+
+
+
+/*End iconMenu*/
+.bannerTitle h1 {
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*.menuTitle ul li{
+    list-style: none;
+    display: inline-block;
+    padding:0 0 15px 15px;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.menuTitle ul li:hover{
+    color: #ccc;
+}*/
+
+
+/*End phan trong menu*/
+
+
+/*Phan layout*/
+
+.phanLayout {
+    height: 60px;
+}
+
+
+/*End Phan Layout*/
+
+
+/*Noi dung*/
+
+.noidung {
+    overflow: hidden;
+    width: 75%;
+    min-height: 600px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1224px){
+    .noidung{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media only screen and (min-width: 1224px){
+    .nav_bar{
+        width: 75%;
+    }
+}
+/*Trang thai sau khi hover*/
+
+
+
+/*Footer*/
+
+.footer {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #191919;
+}
+
+.footer p {
+    line-height: 80px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+}
+
+
+/*End Footer*/
+
+
+/* RESPONSIVE CSS mobile*/
+
+@media only screen and (max-width: 1024px) {
+    .Menu{
+        width: 100%;
+        height: 80px;
+        position: relative;
+        background: none;
+        z-index: 99;
+    }
+    .menuTitle {
+        display: none;
+    }
+    .social {
+        display: none;
+    }
+    .header_desktop {
+        display: none;
+    }
+    .header_mobile {
+        display: inline;
+    }
+}
+
+/* END RESPONSIVE CSS*/

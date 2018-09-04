@@ -1,0 +1,6 @@
+#!/bin/bash
+BASEDIR=$(dirname "$0")
+source ${BASEDIR}/../.env
+
+CURRENT_DIR=$(pwd)
+eval docker run -v ${CURRENT_DIR}:/app --network=${DOCKER_NETWORK} hungtv/laravel-composer $@

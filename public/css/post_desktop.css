@@ -1,0 +1,98 @@
+/*Trang thai binh thuong cua thang post*/
+.post{
+  width: 450px;
+  height: 250px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.img_post{
+  width: 190px;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+.img_post img{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.content_element{
+  width: 250px;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+  position: relative;
+  padding-left: 10px;
+}
+.content_element p{
+   overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.content_element a{
+    text-decoration: none;
+    color: black;
+}
+.content_element h3{
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+}
+.content_element h3:hover{
+    color: #2980b9;
+}
+.admin_post{
+   position:absolute;
+   bottom:0;
+   width: 100%;
+   height:35px;
+  margin-bottom: 10px;
+}
+.img_admin{
+  width: 35px;
+  height:35px;
+  border-radius: 100%;
+  box-sizing: border-box;
+  float: left;
+}
+.img_admin img{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+
+}
+.information{
+  width: 200px;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+.name_admin{
+  width: 100%;
+  height: 50%;
+}
+.name_admin p{
+  margin-top: 0px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.name_admin p:hover{
+    color: #ff5757;
+}
+.create_at{
+  width: 100%;
+  height: 50%;
+}
+.create_at p{
+  margin-top: 1px;
+}
+/* End Trang thai binh thuong cua thang post*/
+@media only screen and (max-width: 1024px){
+  .post{
+    display: none;
+  }
+}

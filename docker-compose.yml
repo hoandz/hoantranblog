@@ -1,0 +1,56 @@
+version: "3"
+services:
+    # Use for both development and deployment
+    app:
+      image: laravel-www
+      container_name: laravel-www
+      build:
+        context: .
+        dockerfile: docker/laravel-www/Dockerfile
+      depends_on:
+        - mysql
+      ports:
+        - 8080:80
+      volumes:
+        - .:/var/www/html
+      environment:
+        APP_ENV: local
+        CONTAINER_ROLE: app
+
+    mysql:
+      container_name: laravel-mysql
+      image: mysql:5.7
+      ports:
+        - 13306:3306
+      volumes:
+        - mysql:/var/lib/mysql
+      environment:
+        MYSQL_DATABASE: homestead
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_USER: homestead
+        MYSQL_PASSWORD: secret
+    
+    # Use for the development
+    webpack:
+      image: laravel-webpack
+      container_name: laravel-webpack
+      build:
+        context: .
+        dockerfile: docker/laravel-webpack/Dockerfile
+      volumes:
+        - .:/app
+        
+    phpmyadmin:
+      image: phpmyadmin/phpmyadmin
+      container_name: laravel-phpmyadmin
+      ports:
+        - 8081:80
+      depends_on:
+        - mysql
+      environment:
+        PMA_HOST: laravel-mysql
+        MYSQL_USER: homestead
+        MYSQL_PASSWORD: secret
+volumes:
+  mysql:
+    driver: "local"
