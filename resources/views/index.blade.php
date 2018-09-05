@@ -13,40 +13,46 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="content">
-        <div class="Menu" style="background-image: url('img/background3.jpg');">
-            <div class="header_desktop">
-                <div class="nav_bar">
-                    <div class="logo">
-                        <h2><a href="{{url('/index')}}">HoanTran</a></h2>                       
-                    </div>
-                    <div class="menuTitle">
-                        <ul>
-                            <li>Trang Chủ</li>
-                            <li>Css Effect</li>
-                            <li>Blog</li>
-                            <li>About Me</li>
-                        </ul>
-                    </div>
-                    <div class="social">
-                        <div class="box-container">
-                            <div class="iconSub"><i class="fa fa-reply"></i></div>
-                            <div class="social-thump">
-                                <div class="icon twi"><i class="fa fa-twitter"></i></div>
-                                <div class="icon fb"><i class="fa fa-facebook"></i></div>
-                                <div class="icon gg"><i class="fa fa-google-plus"></i></div>
-                                <div class="icon ig"><i class="fa fa-instagram"></i></div>
-                            </div>
+        <div class="menu">
+            <div class="container">
+                <div class="site-branding"> 
+                    <div class="col col-md-4 logo">
+                        <div class="row">
+                            <h3><a href="{{url('/index')}}">HoanTran</a></h3>
                         </div>
                     </div>
-                    <!-- <div class="menu1">
-                        <input class="burger-check" id="burger-check" type="checkbox">
-                        <label for="burger-check" class="burger"></label>
-                    </div> -->
+                    <div class="col col-md-8 site-header">
+                            <ul>
+                                <li>Posts</li>
+                                <li>Posts</li>
+                                <li>Posts</li>
+                                <li>Posts</li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="site-navigation">
+                    <div class="col col-8 menu_post">
+                        <ul>
+                            <li>Posts</li>
+                            <li>Posts</li>
+                            <li>Posts</li>
+                            <li>Posts</li>
+                        </ul>
+                    </div>
+                    <div class="col col-md-4 form_search">
+                        <div class="input-group mb-3 search_input">
+                          <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <span style="cursor: pointer;" class="input-group-text" id="basic-addon2"><i class="fab fa-searchengin" ></i></span>
+                          </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
             <div class="header_mobile">
