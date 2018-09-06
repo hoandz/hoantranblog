@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{asset('css/post_desktop.css')}}">
     <link rel="stylesheet" href="{{asset('css/post_mobile.css')}}">
     <link rel="stylesheet" href="{{asset('css/back_to_top.css')}}">
+    <link rel="stylesheet" href="{{asset('css/article.css')}}">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,19 +21,19 @@
     <div class="content">
         <div class="menu">
             <div class="container">
-                <div class="site-branding"> 
+                <div class="site-branding">
                     <div class="col col-md-4 logo">
                         <div class="row">
                             <h3><a href="{{url('/index')}}">HoanTran</a></h3>
                         </div>
                     </div>
                     <div class="col col-md-8 site-header">
-                            <ul>
-                                <li>Posts</li>
-                                <li>Posts</li>
-                                <li>Posts</li>
-                                <li>Posts</li>
-                            </ul>
+                        <ul>
+                            <li>Posts</li>
+                            <li>Posts</li>
+                            <li>Posts</li>
+                            <li>Posts</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="site-navigation">
@@ -46,23 +47,22 @@
                     </div>
                     <div class="col col-md-4 form_search">
                         <div class="input-group mb-3 search_input">
-                          <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                          <div class="input-group-append">
-                            <span style="cursor: pointer;" class="input-group-text" id="basic-addon2"><i class="fab fa-searchengin" ></i></span>
-                          </div>
+                            <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <span style="cursor: pointer;" class="input-group-text" id="basic-addon2"><i class="fab fa-searchengin" ></i></span>
+                            </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
-            <div class="header_mobile">
+        </div>
+        <div class="header_mobile">
+            <div class="container">
                 <div class="nav_bar">
-                    <div class="logo">
-                        <h2><a href="{{url('/index')}}">HoanTran</a></h2>
+                    <div class="logo_mobile">
+                        <h4><a href="{{url('/index')}}">HoanTran</a></h4>
                     </div>
-                    <div class="menuTitle">
-                    </div>
-                    <div class="menu1">
+                    <div class="iconMenu">
                         <i class="fa fa-bars nut"></i>
                     </div>
                 </div>
