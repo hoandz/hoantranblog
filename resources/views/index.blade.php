@@ -30,19 +30,17 @@
                     <div class="col col-md-8 site-header">
                         <ul>
                             <li>Posts</li>
-                            <li>Posts</li>
-                            <li>Posts</li>
-                            <li>Posts</li>
+                            <li>Notes</li>
+                            <li>About Me</li>
                         </ul>
                     </div>
                 </div>
                 <div class="site-navigation">
                     <div class="col col-8 menu_post">
                         <ul>
-                            <li>Posts</li>
-                            <li>Posts</li>
-                            <li>Posts</li>
-                            <li>Posts</li>
+                            <li>Css Tricks</li>
+                            <li>Tricks ide</li>
+                            <li>Jquery</li>
                         </ul>
                     </div>
                     <div class="col col-md-4 form_search">
@@ -71,7 +69,119 @@
         <div class="phanLayout"></div>
         <div class="noidung">
             <!-- Post desktop -->
-            @foreach ($articles as $a)
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 post_feed">
+                        @foreach ($articles as $a)
+                        <div class="post-feed-item">
+                            <div class="img_admin_post">
+                                <img src="https://www.atomix.com.au/media/2015/06/atomix_user31.png" alt="">
+                            </div>
+                            <div class="post-feed-item-info">
+                                <div class="post-meta-inline">
+                                    <div class="user-inline">
+                                        <span>Hoan Tran</span>
+                                    </div>
+                                    <div class="post-meta">
+                                        <span>about 3 hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="post-title-inline">
+                                    <a href="{{url('/article/'.$a -> id)}}"><h4>{{$a->title}}</h4></a>
+                                </div>
+                                <div class="tags" style="margin-bottom: 5px">
+                                  <button>Css</button>
+                                  <button>Laravel</button>
+                                  <button>Bootstrap</button>
+                                </div>
+                                <div class="justify-content-between">
+                                    <div class="post_status">
+                                        <ul style="margin: 0;">
+                                          <li><i class="far fa-eye"></i> 566</li>
+                                          <li><i class="fas fa-comments"></i> 23</li>
+                                          <li><i class="fa fa-paperclip"></i> 2</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                    <div class="col-md-3">
+                        <div class="watch-more">
+                            <div class="hot_news">
+                                <span>Hot News</span>
+                            </div>
+                            <div class="item">
+                                <div class="title_item_related">
+                                  <h4>Tính toán vùng bounds bắt đầu và kết thúc của ImageView.
+                                  </h4>
+                                </div>
+                                <div class="post_status">
+                                    <ul>
+                                      <li><i class="far fa-eye"></i> 566</li>
+                                      <li><i class="fas fa-comments"></i> 23</li>
+                                      <li><i class="fa fa-paperclip"></i> 2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="title_item_related">
+                                  <h4>Tính toán vùng bounds bắt đầu và kết thúc của ImageView.
+                                  </h4>
+                                </div>
+                                <div class="post_status">
+                                    <ul>
+                                      <li><i class="far fa-eye"></i> 566</li>
+                                      <li><i class="fas fa-comments"></i> 23</li>
+                                      <li><i class="fa fa-paperclip"></i> 2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="title_item_related">
+                                  <h4>Tính toán vùng bounds bắt đầu và kết thúc của ImageView.
+                                  </h4>
+                                </div>
+                                <div class="post_status">
+                                    <ul>
+                                      <li><i class="far fa-eye"></i> 566</li>
+                                      <li><i class="fas fa-comments"></i> 23</li>
+                                      <li><i class="fa fa-paperclip"></i> 2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="title_item_related">
+                                  <h4>Tính toán vùng bounds bắt đầu và kết thúc của ImageView.
+                                  </h4>
+                                </div>
+                                <div class="post_status">
+                                    <ul>
+                                      <li><i class="far fa-eye"></i> 566</li>
+                                      <li><i class="fas fa-comments"></i> 23</li>
+                                      <li><i class="fa fa-paperclip"></i> 2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="title_item_related">
+                                  <h4>Tính toán vùng bounds bắt đầu và kết thúc của ImageView.
+                                  </h4>
+                                </div>
+                                <div class="post_status">
+                                    <ul>
+                                      <li><i class="far fa-eye"></i> 566</li>
+                                      <li><i class="fas fa-comments"></i> 23</li>
+                                      <li><i class="fa fa-paperclip"></i> 2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- @foreach ($articles as $a)
                 <div class="post">
                     <div class="img_post">
                         <img src="https://cdn-images-1.medium.com/max/1600/1*IJlgGsOIpq0lKTdf6lZATA.png" alt="">
@@ -94,35 +204,8 @@
                         </div>
                     </div>
                 </div>
-            @endforeach
+            @endforeach -->
             <!-- end Post desktop -->
-            <!-- post Mobile -->
-            @foreach ($articles as $a)
-            <div class="post_mobile">
-                <div class="img_post_mobile">
-                    <img src="https://cdn-images-1.medium.com/max/1600/1*IJlgGsOIpq0lKTdf6lZATA.png" alt="">
-                </div>
-                <div class="content_element_mobile">
-                    <a href="{{url('/article/'.$a -> id)}}"><h3>{{$a->title}}</h3></a>
-                    <p>{!! $a->quote_content !!}</p>
-                    <div class="admin_post_mobile">
-                        <div class="img_admin_mobile">
-                            <img src="https://cdn.wccftech.com/wp-content/uploads/2018/04/spidey_selfie.jpg" alt="">
-                        </div>
-                        <div class="information_mobile">
-                            <div class="name_admin_mobile">
-                                <p>Carl Tashian</p>
-                            </div>
-                            <div class="create_at_mobile">
-                                <p>Apr 22, 2018</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>           
-            @endforeach
-            <!-- end Post mobile -->
-            
         </div>
         <div class="footer">
             <p>@2018 - Hoantran Blog. All Right Reserved</p>

@@ -104,6 +104,11 @@
                                 <div class="title-post">
                                   <span>Phóng to view sử dụng zoom animation trong android</span>
                                 </div>
+                                <div class="tags">
+                                  <button>Css</button>
+                                  <button>Laravel</button>
+                                  <button>Bootstrap</button>
+                                </div>
                                 <div class="article-content">
                                     <p>
                                         Assign image với độ phân giải gốc tới ImageView đc invisible. Ví dụ dưới sẽ load image resource trên UI thread, cách đơn giản nhất.

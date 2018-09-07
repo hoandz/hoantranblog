@@ -77,6 +77,13 @@
     padding-left: 20px;
     line-height: 70px;
     cursor: pointer;
+    font-size: 15px;
+    font-weight: 550;
+    color: #969696;
+    transition: 0.4s;
+}
+.site-header ul li:hover{
+    color: black;
 }
 .menu_post{
     float: left;
@@ -92,6 +99,13 @@
     padding-right: 20px;
     line-height: 70px;
     cursor: pointer;
+    font-size: 15px;
+    font-weight: 550;
+    color: #969696;
+    transition: 0.4s;
+}
+.menu_post ul li:hover{
+    color: black;
 }
 .form_search{
     float: left; 
