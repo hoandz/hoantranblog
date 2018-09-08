@@ -9,11 +9,11 @@
   margin-top: 20px;
 }
 .img_admin_post{
-  width: 9%;
+  width: 7%;
   height: 100%;
   float: left;}
 .img_admin_post img{
-  width: 100%;
+  width: 40px;
   height: auto;
   border-radius: 100%;
 }
@@ -21,7 +21,6 @@
   width: 91%;
   height: 100%;
   float: left;
-  padding-left: 5px;
 }
 .post-meta-inline{
   width: 100%;
@@ -48,8 +47,12 @@
   min-height: 25px;
   overflow: hidden;
 }
-.post-title-inline h4{
-  font-size: 20px;
+.post-title-inline a {
+  text-decoration: none;
+  color: black;
+}
+.post-title-inline a h4{
+  font-size: 1.1rem;
   cursor: pointer;
   transition: 0.4s;
 }
@@ -58,4 +61,16 @@
 }
 .justify-content-between{
   margin-bottom: 5px;
+}
+@media only screen and (max-width: 994px){
+    .img_admin_post img{
+        width: 100%;
+        height: auto;
+    }
+    .post-feed-item-info{
+      padding-left: 5px;
+    }
+    .img_admin_post{
+      width: 9%;
+    }
 }

@@ -10,7 +10,6 @@ $(function(){
 			$('#back-to-top').removeClass('active');
 		}
 	});
-
 	$('#back-to-top').on('click', function(){
 		$('html,body').animate({scrollTop: 0}, "slow");
 		return false;
@@ -18,6 +17,6 @@ $(function(){
 	// end backtotop
 	$('.nut').on('click', function(){
 		$('.content').toggleClass('content2');
-		$('.contentMenu').toggleClass('menutrai');
+		$('.content-menu-mobile').toggleClass('menutrai');
 	});
 })

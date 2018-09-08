@@ -24,7 +24,12 @@
     margin: 0;
     padding: 0;
 }
-.logo_mobile h4{
+.logo_mobile a{
+    text-decoration: none;
+    color: #969696;
+    transition: 0.4s;
+}
+.logo_mobile a h4{
     line-height: 50px;
     cursor: pointer;
 }
@@ -37,7 +42,9 @@
     padding: 0;
 }
 .iconMenu i{
-    line-height: 25px;
+    color: #969696;
+    font-size: 15px;
+    line-height: 15px;
 }
 .nut {
     color: black;
@@ -56,6 +63,14 @@
 .logo{
     height: 100%;
     float: left;
+}
+.logo a{
+    text-decoration: none;
+    color: #969696;
+    transition: 0.4s;
+}
+.logo a:hover{
+    color: #5488c7;
 }
 .logo h3{
     line-height: 70px;

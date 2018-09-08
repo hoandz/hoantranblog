@@ -132,7 +132,7 @@ body {
 }
 .title-post{
     width: 100%;
-    min-height: 110px;
+    min-height: 50px;
     overflow: hidden;
     padding: 0;
 }
@@ -177,12 +177,12 @@ body {
     padding-top: 15px;
     margin: 0;
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 500;
     transition: 0.4s;
     padding-bottom: 5px;
 }
 .title_item_related h4:hover{
-    color: #468a85;
+    color: #5488c7;
 }
 .author_item{
     width: 100%;
@@ -289,12 +289,15 @@ body {
 .tags button:hover{
     background: #377fd6;
 }
+.tags button:focus{
+    outline: none;
+}
 /*end tags*/
 
 /*media*/
 @media only screen and (max-width: 994px){
     .title-post span{
-        font-size: 35px;
+        font-size: 1.75rem;
     }
     .post_author{
         margin-bottom: 50px;
