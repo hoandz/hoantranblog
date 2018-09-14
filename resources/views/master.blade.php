@@ -27,18 +27,17 @@
                     </div>
                     <div class="col col-md-8 site-header">
                         <ul>
-                            <li>Posts</li>
-                            <li>Notes</li>
-                            <li>About Me</li>
+                            <li><a href="{{url('/index')}}">Posts</a></li>
+                            <li><a href="{{url('/note')}}">Notes</a></li>
+                            <li><a href="{{url('/about')}}">About me</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="site-navigation">
                     <div class="col col-8 menu_post">
                         <ul>
-                            <li>Css Tricks</li>
-                            <li>Ide Tricks</li>
-                            <li>Jquery</li>
+                            <li><a href="{{url('/csstrick')}}">Css Tricks</a></li>
+                            <li><a href="{{url('/jquery')}}">Jquery</a></li>
                         </ul>
                     </div>
                     <div class="col col-md-4 form_search">
@@ -67,8 +66,11 @@
         <div class="phanLayout"></div>
         @yield('main')
         <div class="footer">
-            <p>@2018 - Hoantran Blog. All Right Reserved</p>
+            <div class="container footer2">
+                <p>@2018 - Hoantran Blog. All Right Reserved</p>
+            </div>
         </div>
+        
     </div>
     <div class="content-menu-mobile menutrai">
         <i class="fa fa-times nut"></i>

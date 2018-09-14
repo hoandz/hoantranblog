@@ -23,6 +23,19 @@ class MyFirstController extends Controller
         return view('admin');
     }
     //end admin
+    //note
+    public function getCss(){
+        return view('cssTrick');
+    }
+    //jquery
+    public function getJquery(){
+        return view('jquery');
+    }
+    //note
+    public function getNote(){
+        return view('note');
+    }
+    //end note
     public function showArticle($id){
         $article = VpPost::find($id);
     	return view('article') -> with('article', $article);//resources/views : article.blade"

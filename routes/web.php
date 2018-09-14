@@ -43,12 +43,15 @@ Route::get('article/{id}','MyFirstController@showArticle');
 Route::get('admin','MyFirstController@getAdmin');
 //route tat ca bai viet
 Route::get('tatcabaiviet','MyFirstController@getTatCaBaiViet');
-//
-
+//css
+Route::get('csstrick','MyFirstController@getCss');
+//jquery
+Route::get('jquery','MyFirstController@getJquery');
+//jquery
+Route::get('note','MyFirstController@getNote');
 // delete data
 Route::get('/delete/{id}','MyFirstController@getDelete');
 // end delete data
-
 //fix data
 Route::get('editdata/{id}','MyFirstController@getData');
 // end fix data
