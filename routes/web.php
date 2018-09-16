@@ -41,6 +41,14 @@ Route::get('index','MyFirstController@getView');
 Route::get('article/{id}','MyFirstController@showArticle');
 //route admin viet bai
 Route::get('admin','MyFirstController@getAdmin');
+Route::get('button','MyFirstController@getButton');
+Route::get('editor','MyFirstController@getEditor');
+Route::get('form','MyFirstController@getForm');
+Route::get('icon','MyFirstController@getIcon');
+Route::get('login','MyFirstController@getLogin');
+Route::get('table','MyFirstController@getTable');
+Route::get('typography','MyFirstController@getTypography');
+//end route
 //route tat ca bai viet
 Route::get('tatcabaiviet','MyFirstController@getTatCaBaiViet');
 //css

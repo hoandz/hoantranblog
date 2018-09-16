@@ -75,12 +75,11 @@
     <div class="content-menu-mobile menutrai">
         <i class="fa fa-times nut"></i>
         <ul>
-            <li class="list_item">Posts</li>
-            <li class="list_item">Notes</li>
-            <li class="list_item">About Me</li>
-            <li class="list_item sep">Css Tricks</li>
-            <li class="list_item">Ide Tricks</li>
-            <li class="list_item">Jquery</li>
+            <li class="list_item"><a href="{{url('/index')}}">Posts</a></li>
+            <li class="list_item"><a href="{{url('/note')}}">Notes</a></li>
+            <li class="list_item"><a href="{{url('/about')}}">About me</a></li>
+            <li class="list_item sep"><a href="{{url('/csstrick')}}">Css Tricks</a></li>
+            <li class="list_item"><a href="{{url('/jquery')}}">Jquery</a></li>
         </ul>
     </div>
     <a id="back-to-top" href="#"><i class="fa fa-angle-up"></i></a>

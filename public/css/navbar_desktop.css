@@ -97,8 +97,13 @@
     color: #969696;
     transition: 0.4s;
 }
-.site-header ul li:hover{
-    color: black;
+.site-header ul li a{
+    text-decoration: none;
+    color: #969696;
+    transition: 0.4s;
+}
+.site-header ul li a:hover{
+    color: #5488c7;
 }
 .menu_post{
     float: left;
@@ -119,8 +124,13 @@
     color: #969696;
     transition: 0.4s;
 }
-.menu_post ul li:hover{
-    color: black;
+.menu_post ul li a{
+    text-decoration: none;
+    color: #969696;
+    transition: 0.4s;
+}
+.menu_post ul li a:hover{
+    color: #5488c7;
 }
 .form_search{
     float: left; 

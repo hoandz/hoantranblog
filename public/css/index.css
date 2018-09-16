@@ -58,12 +58,16 @@ body {
     cursor: pointer;
     font-size: 20px;
 }
-
+.content-menu-mobile ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+}
 .content-menu-mobile ul li i {
     padding-right: 10px;
 }
 
-.content-menu-mobile ul li:hover {
+.content-menu-mobile ul li a:hover {
     color: #59e9df;
 }
 

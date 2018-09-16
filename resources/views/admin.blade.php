@@ -17,7 +17,7 @@
                 <a href="{{url('/tatcabaiviet')}}"><li><i class="fa fa-th"></i>Tất Cả Bài Viết</li></a>
 			</ul>
 	</div>
-	<div class="bai_viet_moi">
+	<div class="bai_viet_moi"> 
 		<div class="container editer">	
             <h2>Tiêu đề bài viết</h2>
             <form action="verify" method="post" >

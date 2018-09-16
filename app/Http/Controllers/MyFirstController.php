@@ -20,7 +20,28 @@ class MyFirstController extends Controller
     }
     //admin
     public function getAdmin(){
-        return view('admin');
+        return view('admin/index');
+    }
+    public function getButton(){
+        return view('admin/button');
+    }
+    public function getEditor(){
+        return view('admin/editor');
+    }
+    public function getForm(){
+        return view('admin/form');
+    }
+    public function getIcon(){
+        return view('admin/icon');
+    }
+    public function getLogin(){
+        return view('admin/login');
+    }
+    public function getTable(){
+        return view('admin/table');
+    }
+    public function getTypography(){
+        return view('admin/typography');
     }
     //end admin
     //note
