@@ -22,26 +22,11 @@ class MyFirstController extends Controller
     public function getAdmin(){
         return view('admin/index');
     }
-    public function getButton(){
-        return view('admin/button');
-    }
     public function getEditor(){
         return view('admin/editor');
     }
-    public function getForm(){
-        return view('admin/form');
-    }
-    public function getIcon(){
-        return view('admin/icon');
-    }
     public function getLogin(){
         return view('admin/login');
-    }
-    public function getTable(){
-        return view('admin/table');
-    }
-    public function getTypography(){
-        return view('admin/typography');
     }
     //end admin
     //note
@@ -70,16 +55,16 @@ class MyFirstController extends Controller
         $post = VpPost::find($id);
         if ($post != null) {
             $post->delete();
-            return redirect('tatcabaiviet')->with('msg', 'Da xoa bai viet '.$post->title);
+            return redirect('tatcabaiviet');
         } else {
-            return redirect('tatcabaiviet')->with('msg', 'Bai viet khong ton tai');
+            return redirect('tatcabaiviet');
         }   
     }
     // end delete
     //fix data
     public function getData($id){
         $edit_data = VpPost::find($id);
-        return view('edit_data')->with('post',$edit_data);
+        return view('admin/editor')->with('post',$edit_data);
     }
     // end fix data
 

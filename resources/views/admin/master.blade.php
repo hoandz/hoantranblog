@@ -49,7 +49,7 @@
                     <a href="#"><i class="far fa-file"></i> Quản lý Pages<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="{{url('/editor')}}">Đăng bài</a>
+                            <a href="{{url('/admin')}}">Đăng bài</a>
                         </li>
                         <li>
                             <a href="{{url('/tatcabaiviet')}}">Tất cả bài viết</a>

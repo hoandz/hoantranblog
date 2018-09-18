@@ -42,14 +42,8 @@ use Illuminate\Http\Request;
 
 // Route::get('article/{id}','MyFirstController@showArticle');
 //route admin viet bai
-// Route::get('admin','MyFirstController@getAdmin');
-// Route::get('button','MyFirstController@getButton');
+Route::get('admin','MyFirstController@getAdmin');
 Route::get('editor','MyFirstController@getEditor');
-// Route::get('form','MyFirstController@getForm');
-// Route::get('icon','MyFirstController@getIcon');
-// Route::get('login','MyFirstController@getLogin');
-// Route::get('table','MyFirstController@getTable');
-// Route::get('typography','MyFirstController@getTypography');
 //end route
 //route tat ca bai viet
 Route::get('tatcabaiviet','MyFirstController@getTatCaBaiViet');
@@ -60,10 +54,10 @@ Route::get('tatcabaiviet','MyFirstController@getTatCaBaiViet');
 //jquery
 // Route::get('note','MyFirstController@getNote');
 // delete data
-// Route::get('/delete/{id}','MyFirstController@getDelete');
+Route::get('/delete_post/{id}','MyFirstController@getDelete');
 // end delete data
 //fix data
-// Route::get('editdata/{id}','MyFirstController@getData');
+Route::get('edit_post/{id}','MyFirstController@getData');
 // end fix data
 // update
 // Route::post('update/{id}','MyFirstController@getUpdate');

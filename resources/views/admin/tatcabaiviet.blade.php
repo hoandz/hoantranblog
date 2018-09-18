@@ -14,20 +14,20 @@
                                 <th scope="col">Id</th>
                                 <th scope="col">Title</th>
                                 <th scope="col">Content</th>
-                                <th scope="col">introduce</th>
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach($article_composition as $a)
                             <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <th scope="row">{{$a->id}}</th>
+                                <td>{{$a->title}}</td>
+                                <td>{{$a->content}}</td>
                                 <td>
-                                    <th>Xóa</th>
-                                    <th>Sửa</th>
+                                    <th><a href="{{url('/delete_post')}}/{{ $a->id }}">Xóa</a></th>
+                                    <th><a href="{{url('/edit_post')}}/{{ $a->id }}">Sửa</a></th>
                                 </td>
                             </tr>
+                            @endforeach
                         </tbody>
                     </table>
                     <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
