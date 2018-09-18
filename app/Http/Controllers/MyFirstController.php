@@ -50,36 +50,5 @@ class MyFirstController extends Controller
         $article_composition = VpPost::all();
         return view('admin/tatcabaiviet',compact('article_composition'));
     }
-    // delete
-    public function getDelete($id){
-        $post = VpPost::find($id);
-        if ($post != null) {
-            $post->delete();
-            return redirect('tatcabaiviet');
-        } else {
-            return redirect('tatcabaiviet');
-        }   
-    }
-    // end delete
-    //fix data
-    public function getData($id){
-        $edit_data = VpPost::find($id);
-        return view('admin/editor')->with('post',$edit_data);
-    }
-    // end fix data
 
-
-    // update
-    public function getUpdate($id){
-        
-        $title = request()['title'];
-        $content = request()['content'];
-        // dd($id,$title,$content);
-        $update_data = VpPost::find($id);
-        $update_data->title = $title;
-        $update_data->content = $content;
-        $update_data->save();
-        return redirect('tatcabaiviet');
-    }
-    // end update
 }

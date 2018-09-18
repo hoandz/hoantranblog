@@ -23,8 +23,8 @@
                                 <td>{{$a->title}}</td>
                                 <td>{{$a->content}}</td>
                                 <td>
-                                    <th><a href="{{url('/delete_post')}}/{{ $a->id }}">Xóa</a></th>
-                                    <th><a href="{{url('/edit_post')}}/{{ $a->id }}">Sửa</a></th>
+                                    <th><a href="{{url('/delete_post')}}?id={{ $a->id }}">Xóa</a></th>
+                                    <th><a href="{{url('/edit_post')}}?id={{ $a->id }}">Sửa</a></th>
                                 </td>
                             </tr>
                             @endforeach

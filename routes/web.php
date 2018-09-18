@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
-
+use App\VpPost;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -54,11 +54,8 @@ Route::get('tatcabaiviet','MyFirstController@getTatCaBaiViet');
 //jquery
 // Route::get('note','MyFirstController@getNote');
 // delete data
-Route::get('/delete_post/{id}','MyFirstController@getDelete');
+// Route::get('/delete_post/{id}','MyFirstController@getDelete');
 // end delete data
-//fix data
-Route::get('edit_post/{id}','MyFirstController@getData');
-// end fix data
 // update
 // Route::post('update/{id}','MyFirstController@getUpdate');
 // end update
@@ -126,6 +123,35 @@ Route::post('/create_post', function(Request $request) {
 
 	return $vpPost;
 });
-Route::get('/delete_post',function(){
-		
+
+Route::get('/delete_post',function(Request $request){
+		$id = $request->input('id');
+		$post = VpPost::find($id);
+		if ($post != null) {
+            $post->delete();
+            return redirect('tatcabaiviet');
+        } else {
+            return redirect('tatcabaiviet');
+        }  
+});
+
+//fix data
+Route::get('edit_post',function(Request $request){
+	$id = $request->input('id');
+	$edit_data = VpPost::find($id);
+	return view('admin/index')->with('post',$edit_data);
+});
+
+// end fix data
+Route::get('update_post',function(Request $request){
+	$id = $request->input('id');
+	$title = $request->input('title');
+	$content = $request->input('content');
+
+	$update_post = VpPost::find($id);
+	$update_post->title = $title;
+	$update_post->content = $content;
+	$update_post->save();
+	
+	return $update_post;
 });

@@ -67,11 +67,6 @@
 </div>
 <!-- jQuery -->
 <script src="{{asset('js/js/jquery.min.js')}}"></script>
-<script src="{{asset('js/js/metisMenu.min.js')}}"></script>
-<script src="{{asset('js/js/morris-data.js')}}"></script>
-<script src="{{asset('js/js/morris.min.js')}}"></script>
-<script src="{{asset('js/js/raphael.min.js')}}"></script>
-<script src="{{asset('js/js/sb-admin-2.js')}}"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="{{asset('js/js/bootstrap.min.js')}}"></script>
 @yield('script')
