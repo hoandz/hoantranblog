@@ -63,7 +63,7 @@ class MyFirstController extends Controller
     }
     public function getTatCaBaiViet(){
         $article_composition = VpPost::all();
-        return view('tatCaBaiViet',compact('article_composition'));
+        return view('admin/tatcabaiviet',compact('article_composition'));
     }
     // delete
     public function getDelete($id){
